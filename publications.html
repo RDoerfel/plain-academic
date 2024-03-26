@@ -17,10 +17,13 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body style="min-height: 100%;">
+
     <!-- Navigation -->
-    <div class="container" style="max-width: 800px; align-items: center; border-bottom: 1px solid #000">
-        <nav class="navbar navbar-light bg-light" , role="navigation">
+    <nav class="navbar navbar-light" style="position: fixed; z-index:100;" , role="navigation">
+        <div class="container"
+            style="max-width: 800px; align-items: center; border-bottom: 1px solid #000; position: fixed; top: 0; left: 0; right:0; background-color: white">
+
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-navbar" ,
@@ -29,10 +32,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" , style="color: black;">Ruben P. Dörfel</a>
+                    <a class="navbar-brand" href="#" , style="color: black; font-family: Oswald; size: 20pt;">Ruben
+                        P. Dörfel</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="target-navbar">
+                <div class="collapse navbar-collapse text-right" id="target-navbar">
                     <ul class="nav navbar-nav">
                         <li class="nav-item active"><a href="index.html" , style="color: rgb(44, 41, 41);">Home</a></li>
                         <li class="nav-item"><a href="publications.html" ,
@@ -40,11 +44,11 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <div class="container" ,
-        style="max-width: 600px; align-items: center; padding-top:25px; padding-bottom: 100px; font-family: sans-serif;">
+        style="max-width: 800px; align-items: center; padding-top:100px; padding-bottom: 100px; font-family: sans-serif;">
         <div class="row">
 
             <div class="col-md-12">
@@ -53,14 +57,14 @@
                     <h2 id="publications">Publications</h2>
                     <strong>Peer-Reviewed</strong><br />
                     <ul>
-                        <li class="paper" words="Brain Age, Test-Retest, Accuracy, MRI"><a
+                        <li class="paper" words="Brain Age, Test-Retest, Accuracy, MRI"><a style="color: rgb(135,0,82)"
                                 href="http://dx.doi.org/10.1002/hbm.26502">Prediction of brain age using structural
                                 magnetic resonance imaging: A comparison of accuracy and test-retest reliability of
                                 publicly available software packages</a></li>
                     </ul>
                     <strong>Pre-Prints</strong><br />
                     <ul>
-                        <li class="paper" words="Brain Age, Multimodal, PET, MRI"><a
+                        <li class="paper" words="Brain Age, Multimodal, PET, MRI"><a style="color: rgb(135,0,82)"
                                 href="https://doi.org/10.1101/2024.02.05.578968">Multimodal brain age prediction using
                                 machine learning: combining structural MRI and 5-HT2AR PET derived features</a></li>
                     </ul>
@@ -68,21 +72,23 @@
             </div>
         </div>
     </div>
+
+    <div class="container" ,
+        style="max-width: 800px; font-family: sans-serif; text-align: center; position:fixed; bottom: 0; left: 0; right: 0; background-color: white;">
+        <footer>
+            <p><b>Links</b><br>
+                <a style="color: rgb(135,0,82)"
+                    href="https://scholar.google.com/citations?user=8D0T3WoAAAAJ&hl=da">Google
+                    Scholar</a> -
+                <a style="color: rgb(135,0,82)" href="https://twitter.com/RPDoerfel">Twitter</a> -
+                <a style="color: rgb(135,0,82)" href="https://www.linkedin.com/in/ruben-d%C3%B6rfel/">LinkedIn</a> -
+                <a style="color: rgb(135,0,82)" href="https://orcid.org/0000-0002-5920-5102">ORCID</a>
+            </p>
+        </footer>
     </div>
-    <!-- /.container -->
-    <footer>
-        <div class="container" , style="max-width: 600px; align-items: center;">
-            <!-- Footer content goes here -->
-            <div style=" margin-top:3%; text-align:center;">
-                <p><b>Links</b><br>
-                    <a href="https://scholar.google.com/citations?user=8D0T3WoAAAAJ&hl=da">Google Scholar</a> -
-                    <a href="https://twitter.com/RPDoerfel">Twitter</a> -
-                    <a href="https://www.linkedin.com/in/ruben-d%C3%B6rfel/">LinkedIn</a> -
-                    <a href="https://orcid.org/0000-0002-5920-5102">ORCID</a>
-                </p>
-            </div>
-        </div>
-    </footer>
+
 </body>
+
+
 
 </html>
